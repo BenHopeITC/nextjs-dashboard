@@ -47,7 +47,6 @@ export async function fetchCardData() {
     throw new Error('Failed to fetch card data.');
   }
 }
-
 // NEEDED??
 // fetchCardData()
 //   .then(async () => {
@@ -60,8 +59,13 @@ export async function fetchCardData() {
 //   })
 
 // fetch data in parallel
+
 export async function fetchCardDataParallel() {
+    noStore()
     try {
+      console.log('Fetching card data...');
+      await new Promise((resolve) => setTimeout(resolve, 500));
+
       type InvoiceTotals = {
         paid: number;
         pending: number;
@@ -127,6 +131,9 @@ export async function fetchRevenue() {
 export async function fetchLatestInvoices() {
   noStore()
   try {
+    console.log('Fetching invoice data...');
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+
     const data = await prisma.$queryRaw<LatestInvoiceRaw[]>`
       SELECT invoices.amount, customers.name, customers.image_url, customers.email, invoices.id
       FROM invoices
