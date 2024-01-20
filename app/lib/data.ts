@@ -243,9 +243,7 @@ export async function fetchCustomers() {
   noStore()
   try {
     const data = await prisma.$queryRaw<CustomerField[]>`
-      SELECT
-        id,
-        name
+      SELECT id, name
       FROM customers
       ORDER BY name ASC
     `;
