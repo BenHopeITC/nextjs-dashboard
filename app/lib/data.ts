@@ -218,12 +218,12 @@ export async function fetchInvoiceById(id: string) {
   try {
     const data = await prisma.$queryRaw<InvoiceForm[]>`
       SELECT
-        invoices.id,
-        invoices.customer_id,
-        invoices.amount,
-        invoices.status
+        id,
+        customer_id,
+        amount,
+        status
       FROM invoices
-      WHERE invoices.id = ${id};
+      WHERE id = cast(${id} as UUID);
     `;
 
     const invoice = data.map((invoice) => ({
