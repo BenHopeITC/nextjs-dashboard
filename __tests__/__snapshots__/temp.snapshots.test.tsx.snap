@@ -6,9 +6,9 @@ exports[`renders homepage unchanged 1`] = `
     <h1>
       Home
     </h1>
-    <h2>
+    <h3>
       Sub Home
-    </h2>
+    </h3>
     <a
       href="/about"
     >

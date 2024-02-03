@@ -12,10 +12,10 @@ describe('Home', () => {
     expect(heading).toBeInTheDocument()
   })
 
-  it('renders a heading 2', () => {
+  it('renders a heading 3', () => {
     render(<Home />)
  
-    const heading = screen.getByRole('heading', { level: 2 })
+    const heading = screen.getByRole('heading', { level: 3 })
  
     expect(heading).toBeInTheDocument()
   })

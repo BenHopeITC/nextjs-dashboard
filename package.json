@@ -5,6 +5,8 @@
     "test": "jest",
     "test:dev": "jest",
     "test:watch": "jest --watch",
+    "test:e2e": "testcafe safari",
+    "test:e2e-live": "testcafe safari --live",
     "dev": "next dev",
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
@@ -27,6 +29,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.3",
+    "testcafe": "^3.5.0",
     "typescript": "5.2.2",
     "use-debounce": "^10.0.0",
     "zod": "^3.22.2"
