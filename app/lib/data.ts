@@ -262,7 +262,7 @@ export async function fetchFilteredCustomers(query: string) {
   try {
     const data = await prisma.$queryRaw<CustomersTableType[]>`
 		SELECT
-		  customers.id,
+      cast(customers.id as UUID),
 		  customers.name,
 		  customers.email,
 		  customers.image_url,
@@ -280,8 +280,9 @@ export async function fetchFilteredCustomers(query: string) {
 
     const customers = data.map((customer) => ({
       ...customer,
-      total_pending: formatCurrency(customer.total_pending),
-      total_paid: formatCurrency(customer.total_paid),
+      total_invoices: Number(customer.total_invoices),
+      total_pending: formatCurrency(Number(customer.total_pending)),
+      total_paid: formatCurrency(Number(customer.total_paid)),
     }));
 
     return customers;
