@@ -15,3 +15,14 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 [Jest Docs](https://jestjs.io/docs/getting-started)<br>
 [TestCafe Docs](https://testcafe.io/documentation/402635/guides/overview/getting-started)<br>
 [React|Jest|Testcafe](https://medium.com/@merrittbret9/adding-testcafe-to-react-typescript-jest-project-89d4d62f1b18)<br>
+
+[NextJS Help](https://github.com/vercel/next.js/discussions)
+
+## Learning
+https://nextjs.org/docs/app/building-your-application/data-fetching
+
+https://my-learning.w3schools.com/tutorial/js
+
+https://my-learning.w3schools.com/tutorial/typescript
+
+https://my-learning.w3schools.com/tutorial/react
