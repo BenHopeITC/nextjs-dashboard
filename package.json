@@ -2,18 +2,18 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "test": "jest",
-    "test:dev": "jest",
-    "test:watch": "jest --watch",
-    "test:e2e": "testcafe safari",
-    "test:e2e-live": "testcafe safari --live",
-    "dev": "next dev",
+    "dev": "next dev --port 3001",
+    "lint": "next lint",
+    "prepare": "husky",
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
-    "start": "next start",
     "seed": "node -r dotenv/config ./scripts/seed.js",
-    "lint": "next lint",
-    "prepare": "husky"
+    "start": "next start",
+    "test": "jest",
+    "test:dev": "jest",
+    "test:e2e": "testcafe safari",
+    "test:e2e-live": "testcafe safari --live",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",

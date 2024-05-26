@@ -1,13 +1,16 @@
 ## Next.js App Router Course - Starter
 
 ### Running Locally
+
 1. start docker
 2. open terminal one
 3. cd ~/Hope/CourseResource/postgresql/local-instance
 4. docker compose up
 5. open terminal two
 6. cd nextjs-dashboard
-7. npm run dev
+7. npm run dev (can't run in production mode.. npm run start will fail to login)
+8. go to http://localhost:3000
+9. enter user@nextmail.com / Foo123!
 
 This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
 
@@ -30,6 +33,7 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 [{JSON} Placeholder](https://jsonplaceholder.typicode.com/)
 
 ## Learning
+
 https://nextjs.org/docs/app/building-your-application/data-fetching
 
 https://my-learning.w3schools.com/tutorial/js
